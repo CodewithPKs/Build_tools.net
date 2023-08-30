@@ -78,7 +78,7 @@ body::-webkit-scrollbar {
     top: 0;
     right: 0;
 
-    background: url(/My_PortFolio.github.io/images/pro-pic1.jpg) no-repeat center center/cover;
+    background: url(assests/pro-pic1.jpg) no-repeat center center/cover;
      height: 900px;
      width: 100%;
     z-index: -1;
@@ -215,7 +215,7 @@ body::-webkit-scrollbar {
 }
 
 #aboutme {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/My_PortFolio.github.io/images/pngtree-technology-background-binary-computer-code-vector-illustration-image_458703.jpg") center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("assests/pngtree-technology-background-binary-computer-code-vector-illustration-image_458703.jpg") center/cover;
     padding: 50px;
     text-align: center;
     color: white;
@@ -295,7 +295,7 @@ body::-webkit-scrollbar {
     padding: 50px 0;
     text-align: center;
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/My_PortFolio.github.io/images/pngtree-technology-background-binary-computer-code-vector-illustration-image_458703.jpg") center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("assests/pngtree-technology-background-binary-computer-code-vector-illustration-image_458703.jpg") center/cover;
 }
 
 #skill::before {
@@ -421,7 +421,7 @@ body::-webkit-scrollbar {
 
 #contactme {
     background-color:rgba(0, 0, 0, 0.5); 
-    background: url("/My_PortFolio.github.io/images/pngtree-technology-background-binary-computer-code-vector-illustration-image_458703.jpg") no-repeat center center/cover;
+    background: url("assests/pngtree-technology-background-binary-computer-code-vector-illustration-image_458703.jpg") no-repeat center center/cover;
     opacity: .8;
     padding: 80px;
     text-align: center;
