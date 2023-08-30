@@ -1,0 +1,104 @@
+.date-Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: lavenderblush;
+    flex-direction: column-reverse;
+}
+.age-Content{
+    width: 60%;
+    padding: 30px;
+    text-align: center;
+    border: 2px dashed var(--clr-grey);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(124, 124, 145, 0.1) 0px 16px 48px;
+}
+.h1-tag{
+    background-color: var(--clr-bright);
+}
+.h5-tag{
+    margin: 8px 0;
+}
+.birthdate{
+    width: 60%;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    font-style: italic;
+    border-radius: 5px;
+}
+.function-btn-calc{
+    margin: 10px;
+}
+.age-details label{
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: var(--clr-bright);
+}
+
+.calc-btn-com{
+    border: 1px solid var(--clr-grey);
+    padding: 1.4rem 1.6rem;
+    font-size: 1.3rem;
+   text-transform: uppercase;
+   margin-left: 10px;
+   background-color: hsl(207, 88%, 52%);
+   font-weight: 600;
+   color: white;
+   border-radius: 5px;
+}
+.calc-btn-com:hover{
+    background-color: white;
+    color: black;
+    transition: var(--transition);
+}
+.date-calc .calc-btn-comp2{
+    margin-top: 2rem;
+}
+.calc-btn-comp2{
+    border: 1px solid var(--clr-grey);
+    padding: 1.4rem 1.6rem;
+    font-size: 1.3rem;
+   text-transform: uppercase;
+   margin-left: 10px;
+   background-color: rgb(209, 119, 119);
+   font-weight: 600;
+   color: white;
+   border-radius: 5px;
+}
+.date-calc .calc-btn-comp2:hover{
+    
+      box-shadow: 0 5px 15px rgb(209, 119, 119);
+      text-shadow: 0 5px 15px white;
+      background-color: red;
+      transition: var(--transition);
+}
+.date-Box .date-calc a{
+    color: white;
+}
+@media screen and (max-width: 771px){
+    .calc-btn-com{
+        margin-top: 2rem;
+    }
+    .birthdate{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 517px){
+    .h1-tag{
+        font-size: 2.6rem;
+    }
+    .h5-tag{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 440px){
+    .h1-tag{
+        font-size: 2.3rem;
+    }
+    .h5-tag{
+        font-size: 1rem;
+    }
+    .age-details label{
+        font-size: 1.4rem;
+    }
+}

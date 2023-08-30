@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur&display=swap');
+
+:root{
+    --clr-blue: #1A91F0;
+    --clr-blue-mid: #1170CD;
+    --clr-blue-dark: #1A1C6A;
+    --clr-white: #fff;
+    --clr-bright: #EFF2F9;
+    --clr-dark: #1e2532;
+    --clr-black: #000;
+    --clr-grey: #656e83;
+    --clr-green: #084C41;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-manrope: 'Manrope', sans-serif;
+    --transition: all 300ms ease-in-out;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lavenderblush;
+    height: 50vh;
+}
+.navPdf{
+    padding: 2rem 1rem;
+    background: var(--clr-bright);
+    border-bottom: 1px solid rgb(245, 244, 244);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoPdf{
+    font-size: 2rem;
+    /* color: rgb(182, 34, 34); */
+    font-weight: 700;
+    color: hsl(207, 88%, 52%);
+}
+
+#convertBtn {
+  display: none;
+}
+/* #uplode-msg{
+
+} */
+
+/* input page */
+.inputPdf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    
+}
+.add-more-files{
+    width: 50vw;
+    border-radius: 0.3rem;
+    padding: 3rem;
+    text-align: center;
+    background: lavenderblush;
+    background-color: var(--clr-bright);
+    /* background: rgba(154, 127, 228, 0.068); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px dashed var(--clr-grey);
+}
+.inp-container{
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(124, 124, 145, 0.1) 0px 16px 48px;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    border: 1px dashed rgb(195, 193, 193);
+    margin: auto;
+    background: rgba(154, 127, 228, 0.068);
+    border-width: 0.15rem;
+    
+}
+#uplode-files-img{
+    opacity: 0;
+    display: block;
+    height: 16rem;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+.img-icon{
+    color: var(--clr-blue);
+}
+#custom-file{
+    color: rgb(96, 102, 155);
+    position: relative;
+    top: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.dropPdf{
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    color: rgb(108, 107, 175);
+    padding: 1rem;
+}
+
+/* pdf page */
+.pdf-page{
+    display: none;
+    min-height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+.create-pdf{
+
+    position: relative;
+        padding: 5rem 1rem 1rem 1rem;
+    margin: auto;
+}
+.file-item-pdfM{
+    padding: 0 1rem;
+    background-color: lavenderblush;
+    text-align: center;
+    position: relative;
+    /* width: 10rem;
+    height: 16rem; */
+    margin: 1rem;
+    display: inline-block;
+    transition: 0.3 all ease-in-out;
+    box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.modify button{
+    padding: 0.3rem;
+    color: rgb(250, 64, 64);
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    
+}
+.img-container-all{
+    width: 8.5rem;
+    margin: auto;
+    height: 11rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img-all{
+    position: relative;
+    max-width: 9rem;
+    max-height: 11rem;
+}
+.file-item-pdfM button{
+    margin: 0 0.2rem;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    transition: 0.3s all ease-in-out;
+    opacity: 0;
+    padding: 0.3rem 0.5rem;
+}
+.file-item-pdfM button:hover{
+    background: rgb(224, 248, 251);
+    opacity: 1;
+}
+.file-item-pdfM:hover button{
+    opacity: 1;
+}
+#img-name-cont{
+   
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 8.5rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+.add-more-file{
+    padding: 0 1rem;
+    background: none;
+    text-align: center;
+    position: relative;
+    margin: 0.5rem;
+    display: inline-block;
+    transition: 0.3s all ease-in-out;
+    width: 10rem;
+    height: 16rem;
+    vertical-align: top;
+}
+.inp-cont-pdf{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    border: none;
+    background: rgb(241, 246, 246);
+    width: 9rem;
+    height: 9rem;
+    margin: 3rem auto;
+}
+#inp-cont-pdf{
+    opacity: 0;
+    display: block;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+.create-pdf .add-more-file p{
+    position: relative;
+    top: -4.5rem;
+}
+
+/* warning */
+
+.warning{
+    left:0px;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    color: red;
+}
+.run-warn{
+    width:100%;
+  padding-top: 20px;
+  margin:0 auto;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.animationText{
+    display:inline-block;
+  
+  -webkit-animation: scrolling-left1 20s linear infinite;
+  animation: scrolling-left1 20s linear infinite;
+}
+
+@keyframes scrolling-left1 {
+    0% {transform: translateX(100%);
+        -webkit-transform: translateX(100%);}
+      100% {transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);}
+}
+
+
+@-webkit-keyframes scrolling-left1 {
+    0% {-webkit-transform: translateX(100%);}
+      100% {-webkit-transform: translateX(-100%);}
+}
+
+
+

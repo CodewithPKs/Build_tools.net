@@ -1,0 +1,30 @@
+.date-calc .calc-btn-comp2{
+    margin-top: 2rem;
+}
+.calc-btn-comp2{
+    border: 1px solid var(--clr-grey);
+    padding: 1.4rem 1.6rem;
+    font-size: 1.3rem;
+   text-transform: uppercase;
+   margin-left: 10px;
+   background-color: rgb(209, 119, 119);
+   font-weight: 600;
+   color: white;
+   border-radius: 5px;
+}
+.date-calc .calc-btn-comp2:hover{
+    
+      box-shadow: 0 5px 15px rgb(209, 119, 119);
+      text-shadow: 0 5px 15px white;
+      background-color: red;
+      transition: var(--transition);
+}
+.date-Box .date-calc a{
+    color: white;
+}
+.age-details p{
+    margin-top: 1.5rem;
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    background-color: var(--clr-bright);
+}

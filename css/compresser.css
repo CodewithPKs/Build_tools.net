@@ -1,0 +1,127 @@
+header-comp{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: lavenderblush;
+}
+.wrapper{
+    width: 450px;
+    height: 288px;
+    padding: 30px;
+    background-color:beige;
+    border-radius: 15px;
+    transition: height 1s ease;
+    margin: 15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(124, 124, 145, 0.1) 0px 16px 48px;
+}
+.wrapper.active {
+    height: 100%;
+padding: 10px; 
+ overflow: hidden; 
+}
+.wrapper .upload-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 3px dashed var(--clr-grey);
+    cursor: pointer;
+    padding: 25px;
+}
+.wrapper.active .upload-box{
+    border: none;
+}
+.upload-box p{
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+.wrapper.active .upload-box p{
+   display: none;
+}
+.wrapper.upload-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.wrapper.active .upload-box img{
+    width: 100%;
+    padding: 15px 15px;
+}
+.wrapper .content-compress{
+    opacity: 0;
+    margin-top: 28px;
+    pointer-events: none;
+}
+.wrapper.active .content-compress{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 1s 0.05s ease;
+}
+.content-compress .row-comp-img{
+    display: flex;
+    justify-content: space-between;
+}
+.content-compress .row-comp-img .column-comp{
+    width: calc(100% / 2 - 15px);
+}
+.row-comp-img .column-comp label{
+    font-size: 1.6rem;
+}
+.sizes-comp .column-comp input{
+    width: 100%;
+    height: 49px;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 15px;
+    font-size: 1.6rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.sizes-comp .column-comp input:focus{
+    border: 2px solid #927dfc;
+    padding: 0 14px;
+}
+.content-compress .checkboxes-comp{
+    margin-top: 20px;
+}
+.checkboxes-comp .column-comp{
+    display: flex;
+    align-items: center;
+}
+.checkboxes-comp .column-comp input{
+    width: 17px;
+    height: 17px;
+    accent-color: #927dfc;
+    margin-right: 9px;
+}
+.content-compress .download-btn-comp{
+    width: 100%;
+    padding: 15px 0;
+    color: var(--clr-grey);
+    border: 1px solid var(--clr-grey);
+    outline: none;
+    margin: 30px 0 10px;
+    font-weight: 600;
+    background: var(--clr-bright);
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.content-compress .download-btn-comp:hover{
+       box-shadow: 0 5px 15px rgb(209, 125, 252);
+      text-shadow: 0 5px 15px black;
+      background-color: rgb(146, 125, 252);
+      transition: var(--transition);
+      color: black;
+}
+
+.wrapper .width-set-acc{
+    width: auto;
+}

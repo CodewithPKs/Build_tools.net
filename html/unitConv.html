@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Unit Converter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/css/unitConv.css">
+    <link rel="stylesheet" href="/css/bmiCalc.css">
+    <link rel="stylesheet" href="/css/ageCalc.css">
+
+</head>
+<body>
+    <nav class="navbar bg-white">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="brand-and-toggler">
+                    <a href="/index.html" class="navbar-brand">
+                        <img src="/assests/logo-path.jpg" alt="" class="navbar-brand-icon">
+                        <span class="navbar-brand-text">build <span>tools.</span>
+                    </a>
+
+                    <button type="button" class="navbar-toggler-btn">
+                        <div class="new-bar-menu">
+                            <div class="bars bars-container" id="scrollable-bars" onclick="toggleOptions()">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+
+                            <div class="dropdown-menu">
+                                <a href="/index.html">Home</a>
+                                <a href="/html/resume.html">Resume Builder</a>
+                                <a href="/html/pdf.html">Pdf Converter</a>
+                                <a href="/html/compersser.html">Image Comparesser</a>
+                                <a href="/html/unitConv.html">Unit Convertor</a>
+                                <a href="/html/currencyConverter.html">Currency Convertor</a>
+                                <div class="dropdown-submenu">
+                                    <a href="#">Calculators ></a>
+                                    <div class="submenu">
+                                        <a href="/html/ageCalc.html">Age Calculator</a>
+                                        <a href="/html/dateCalc.html">Date Calculator</a>
+                                        <a href="/html/bmiCalc.html">BMI Calculator</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay" id="overlay"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="unit-Container" id="unit-Container">
+        <div class="unit-borders">
+            <!-- Length converter -->
+            <div class="unit-container-cont length-converter converter-section">
+                <h1 class="unit-h1">Length Converter</h1>
+                <div class="conversion-form">
+                    <div class="input-cont-response">
+                    <label for="inputValue">Enter value to convert:</label>
+                    <input type="number" class="inputValueSize" id="inputValue" placeholder="Enter value" step="any" required>
+                </div>
+
+
+                    
+                <div class="input-cont-response-2">
+                    <label for="fromUnit">From:</label>
+                    <select id="fromUnit" class="unit-label">
+                        <option value="meters">Meters</option>
+                        <option value="centimeters">Centimeter</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="feet">Feet</option>
+                        <option value="inches">inch</option>
+                        <option value="millimeters">millimeter</option>
+                    </select>
+
+                    <label for="toUnit">To:</label>
+                    <select id="toUnit" class="unit-label">
+                        <option value="meters">Meters</option>
+                        <option value="centimeters">Centimeter</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="feet">Feet</option>
+                        <option value="inches">inch</option>
+                        <option value="millimeters">millimeter</option>
+                    </select>
+                </div>
+                    <div class="convert-unit-btn">
+                        <button id="convertBtn" class="calc-btn-com bmi-btn">Convert</button>
+                    </div>
+                    <div id="unit-result"></div>
+                </div>
+            </div>
+
+            <!-- temperature converter -->
+            <div class="unit-container-cont temperature-converter converter-section" style="display: none;">
+                <h1 class="unit-h1">Temperature Converter</h1>
+                <div class="conversion-form">
+                    <div class="input-cont-response">
+                    <label for="inputValue">Enter value to convert:</label>
+                    <input type="number" id="inputValueTemp" class="inputValueSize" placeholder="Enter value" step="any" required>
+                </div>
+
+                    <div class="input-cont-response-2">
+                    <label for="fromUnit">From:</label>
+                    <select id="fromUnitTemp" class="unit-label">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+
+                    <label for="toUnit">To:</label>
+                    <select id="toUnitTemp" class="unit-label">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+
+                    <div class="convert-unit-btn">
+                        <button id="convertBtnTemp" class="calc-btn-com bmi-btn">Convert</button>
+                    </div>
+                    <div id="unit-resultTemp"></div>
+                </div>
+            </div>
+
+            <!-- weigth converter -->
+            <div class="unit-container-cont weight-converter converter-section" style="display: none;">
+                <h1 class="unit-h1">Weigth Converter</h1>
+                <div class="conversion-form">
+                    <div class="input-cont-response">
+                    <label for="inputValue">Enter value to convert:</label>
+                    <input type="number" id="inputValueWeight" class="inputValueSize"  placeholder="Enter value" step="any" required>
+                </div>
+
+                <div class="input-cont-response-2">
+                    <label for="fromUnit">From:</label>
+                    <select id="fromUnitWeight" class="unit-label">
+                        <option value="kilogram">Kilogram[kg]</option>
+                        <option value="gram">Gram[g]</option>
+                        <option value="milligram">Milligram[mg]</option>
+                        <option value="microgram">Microgram[ug]</option>
+                        <option value="ton">Ton[t]</option>
+                        <option value="pound">Pound[lbs]</option>
+                        <option value="ounce">Ounce[oz]</option>
+                        <option value="ton(us)">Ton(US)</option>
+                        <option value="ton(uk)">Ton(UK)</option>
+                    </select>
+
+                    <label for="toUnit">To:</label>
+                    <select id="toUnitWeight" class="unit-label">
+                        <option value="kilogram">Kilogram[kg]</option>
+                        <option value="gram">Gram[g]</option>
+                        <option value="milligram">Milligram[mg]</option>
+                        <option value="microgram">Microgram[ug]</option>
+                        <option value="ton">Ton[t]</option>
+                        <option value="pound">Pound[lbs]</option>
+                        <option value="ounce">Ounce[oz]</option>
+                        <option value="ton(us)">Ton(US)</option>
+                        <option value="ton(uk)">Ton(UK)</option>
+                    </select>
+                </div>
+                    <div class="convert-unit-btn">
+                        <button id="convertBtnWeight" class="calc-btn-com bmi-btn">Convert</button>
+                    </div>
+                    <div id="unit-resultWeight"></div>
+                </div>
+            </div>
+
+            <!-- time converter -->
+            <div class="unit-container-cont time-converter converter-section" style="display: none;">
+                <h1 class="unit-h1">Time Converter</h1>
+                <div class="conversion-form">
+                    <div class="input-cont-response">
+                    <label for="inputValue">Enter value to convert:</label>
+                    <input type="number" id="timeinputValue" class="inputValueSize"  placeholder="Enter value" step="any" required>
+                </div>
+
+                    <div class="input-cont-response-2">
+                    <label for="fromUnit">From:</label>
+                    <select id="timefromUnit" class="unit-label">
+                        <option value="seconds">Secondes</option>
+                        <option value="minutes">Minutes</option>
+                        <option value="hours">Hours</option>
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                        <option value="months">Months</option>
+                        <option value="year">Year</option>
+                    </select>
+
+                    <label for="toUnit">To:</label>
+                    <select id="timetoUnit" class="unit-label">
+                        <option value="seconds">Secondes</option>
+                        <option value="minutes">Minutes</option>
+                        <option value="hours">Hours</option>
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                        <option value="months">Months</option>
+                        <option value="year">Year</option>
+                    </select>
+                </div>
+                    <div class="convert-unit-btn">
+                        <button id="timeconvertBtn" class="calc-btn-com bmi-btn">Convert</button>
+                    </div>
+                    <div id="time-unit-result"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="convertion-btns">
+            <div class="date-calc">
+                <button id="lengthConverterBtn" class="calc-btn-comp2 unit-size">Length</button>
+                <button id="temperatureConverterBtn" class="calc-btn-comp2 unit-size">Temperature</button>
+                <button id="weightConverterBtn" class="calc-btn-comp2 unit-size">Weight</button>
+                <button id="timeConverterBtn" class="calc-btn-comp2 unit-size">Time</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="footer-content text-center">
+                <p class="fs-15">&copy;Copyright 2023. All Rights Reserved - <span>build tools.</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/js/unitConv.js"></script>
+</body>
+
+</html>

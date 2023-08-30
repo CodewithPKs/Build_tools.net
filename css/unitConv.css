@@ -1,0 +1,79 @@
+.unit-Container{
+    background-color: lavenderblush;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.unit-borders{
+    border: 1px dashed ;
+    padding: 3rem;
+    width: 60%;
+    text-align: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(124, 124, 145, 0.1) 0px 16px 48px;
+
+}
+.unit-label{
+     padding: 0.6rem;
+     border-radius: 5px;
+}
+.conversion-form input{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.unit-h1{
+    background-color: var(--clr-bright);
+}
+.conversion-form{
+    margin-top: 2rem;
+}
+.convertion-btns{
+    margin-bottom: 2rem;
+}
+.unit-size{
+    width: 12rem;
+    text-align: center;
+}
+.input-cont-response{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.inputValueSize{
+    width: 70%;
+}
+@media screen and (max-width: 700px){
+    .input-cont-response-2{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+}
+@media screen and (max-width: 580px){
+    .unit-h1{
+        font-size: 2.4rem;
+    }
+}
+@media screen and (max-width: 550px){
+    .unit-h1{
+        font-size: 2.4rem;
+    }
+    .date-calc .calc-btn-comp2 {
+        margin-top: 2rem;
+        font-size: 1rem;
+        padding: 1rem 1rem;
+        width: 12rem;
+      }
+      .date-calc{
+        display: grid;
+grid-template-columns: 1fr 1fr;
+grid-auto-rows: 60px;
+      }
+}
+@media screen and (max-width: 507px){
+    
+}

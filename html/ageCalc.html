@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Age Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/css/ageCalc.css">
+
+</head>
+<body>
+    <!-- navBar -->
+    <nav class="navbar bg-white">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="brand-and-toggler">
+                    <a href="/index.html" class="navbar-brand">
+                        <img src="/assests/logo-path.jpg" alt="" class="navbar-brand-icon">
+                        <span class="navbar-brand-text">build <span>tools.</span>
+                    </a>
+
+                    <button type="button" class="navbar-toggler-btn">
+                        <div class="new-bar-menu">
+                            <div class="bars bars-container" id="scrollable-bars" onclick="toggleOptions()">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+
+                            <div class="dropdown-menu">
+                                <a href="/index.html">Home</a>
+                                <a href="/html/resume.html">Resume Builder</a>
+                                <a href="/html/pdf.html">Pdf Converter</a>
+                                <a href="/html/compersser.html">Image Comparesser</a>
+                                <a href="/html/unitConv.html">Unit Convertor</a>
+                                <a href="/html/currencyConverter.html">Currency Convertor</a>
+                                <div class="dropdown-submenu">
+                                    <a href="#">Calculators ></a>
+                                    <div class="submenu">
+                                        <a href="/html/ageCalc.html">Age Calculator</a>
+                                        <a href="/html/dateCalc.html">Date Calculator</a>
+                                        <a href="/html/bmiCalc.html">BMI Calculator</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay" id="overlay"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="date-Box">
+        <div class="date-calc">
+            <a href="/html/dateCalc.html"><button onclick="" class="calc-btn-comp2">Date Calculator</button></a>
+        </div>
+        <div class="age-Content">
+            <div class="age-details">
+            <h1 class="h1-tag">Age Calculator</h1>
+            <p class="h5-tag">The Age Calculator can determine the age or interval between two dates. The calculated age will be displayed in years, months, weeks, days, hours, minutes, and seconds.</p>
+            <label for="birthdate">Enter your birthdate:</label>
+            <div class="function-btn-calc">
+            <input type="date" id="birthdate" class="birthdate">
+            <button onclick="calculateAge()" class="calc-btn-com">Calculate Age</button>
+        </div>
+            <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="footer-content text-center">
+                <p class="fs-15">&copy;Copyright 2023. All Rights Reserved - <span>build tools.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/ageCalc.js"></script>
+</body>
+
+</html>
