@@ -3,13 +3,15 @@
     align-items: center;
     justify-content: center;
     min-height: 80vh;
-    background: #675afe;
+    background: lavenderblush;
 }
 .curr-wrraper{
     width: 370px;
     padding: 30px;
     border-radius: 7px;
     background: white;
+    border: 2px dashed black;
+    
 }
 .curr-wrraper header{
     font-size: 28px;
