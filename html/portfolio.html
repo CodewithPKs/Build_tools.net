@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="/css/portfolio.css"> 
 </head>
 
 <body>
@@ -17,28 +17,30 @@
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#skill">Skills</a></li>
             <li><a href="#contactme">Contact Me</a></li>
-            <li><a href="/index.html">My_Site</a></li>
+            <li><a href="index.html">My_Site</a></li>
         </ul>
     </nav>
     <section id="home">
         <div class="main">
-            <h4 class="headings">Hello, my name is<br>
+            <h4 class="headings">Hello, My Name Is<br>
                 <h1>
                     <div class="name name-container" style="color: blue;">PRAVEEN <div class="surname"
                             style="color: red;">SONI</div>
                     </div>
                 </h1>
-                <h3>I am a Front End Web Developer</h3>
+                <h3>I am a Web & App Developer</h3>
             </h4>
-            <a href="https://drive.google.com/file/d/1n9mIjmasnlj7qqVBWvSSzmsRM9qr4tKR/view?usp=share_link"
+            <a href="https://drive.google.com/file/d/1eEyQsDsLkzhgQVUdirq3d5qzrXhtVFIg/view?usp=sharing"
                 class="resume">My Resume</a>
         </div>
     </section>
 
+    <!-- ---------------------------about-section------------------------------ -->
+
     <section id="aboutme">
         <div class="container">
             <h1 class="name-container-about">About Me<br></h1>
-            <div class="pro-pic"><img src="/assests/sittingimg1.jpeg" alt="">
+            <div class="pro-pic"><img src="/My_PortFolio.github.io/images/sittingimg1.jpeg" alt="">
                 <div class="about-sec">
 
                     <h5>
@@ -85,20 +87,23 @@
         </div>
     </section>
 
-
+   
 
     <section id="contactme">
         <div class="container">
             <h1 class="name-container-contact">CONTACT ME</h1>
             <div class="content">
-                <h2 class="hire">Let Me Get You A Beautiful Website</h2>
-                <span><h3 >Hire Me</h3></span>
+                <h2 class="hire">Let Me Get You A Beautiful Projects</h2>
+                <a href="/My_PortFolio.github.io/form.html"><span><h3 class="hire-button" onclick="toggleForm()"> Hire Me</h3></span></a>
+                
+            </div>  
+            
                 <div class="name-con">
                     <span class="firstname">PRAVEEN</span>
                     <span class="surname">SONI</span>
                 </div>
                 <div class="last-info">
-                    <h5 class="end-con">For More HTML, CSS and Coding tutorial Please click on the link below to Hire Me
+                    <h5 class="end-con">For More HTML, CSS And Web & App Projects So Please Contect Me Below
                     </h5>
                     <div class="all-links">
                         <a href="https://www.linkedin.com/in/praveen-soni-856200207" class="linkedin"><i
@@ -106,14 +111,27 @@
                         <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="email"><i
                                 class="fas fa-envelope"></i></a>
                         <a href="https://wa.me/916261414316" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/CodewithPKs" class="Github"><i class="fa-brands fa-github"></i></a>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <div id="contact-form" style="display: none;">
+        <form id="contact-form" onsubmit="sendEmail(event)">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+  
+    
+    
+    <script src="myScript.js"></script>
     <script src="https://kit.fontawesome.com/b3aee765eb.js" crossorigin="anonymous"></script>
-
+    
 
 </body>
 
