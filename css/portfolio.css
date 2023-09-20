@@ -78,7 +78,7 @@ body::-webkit-scrollbar {
     top: 0;
     right: 0;
 
-    background: url("assests/pro-pic1.jpg") no-repeat center center/cover;
+    background: url("/Build_tools.net/assests/sittingimg1.jpeg") no-repeat center center/cover;
      height: 900px;
      width: 100%;
     z-index: -1;
@@ -215,7 +215,7 @@ body::-webkit-scrollbar {
 }
 
 #aboutme {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/assests/bg-pic.jpg") center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/Build_tools.net/assests/bg-pic.jpg") center/cover;
     padding: 50px;
     text-align: center;
     color: white;
@@ -295,7 +295,7 @@ body::-webkit-scrollbar {
     padding: 50px 0;
     text-align: center;
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/assests/bg-pic.jpg") center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/Build_tools.net/assests/bg-pic.jpg") center/cover;
 }
 
 #skill::before {
@@ -305,7 +305,7 @@ body::-webkit-scrollbar {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url("/assests/bg-pic.jpg") no-repeat center/cover;
+    background: url("/Build_tools.net/assests/bg-pic.jpg") no-repeat center/cover;
     opacity: 0.8;
     z-index: -1;
 }
@@ -421,7 +421,7 @@ body::-webkit-scrollbar {
 
 #contactme {
     background-color:rgba(0, 0, 0, 0.5); 
-    background: url("/assests/bg-pic.jpg") no-repeat center center/cover;
+    background: url("/Build_tools.net/assests/bg-pic.jpg") no-repeat center center/cover;
     opacity: .8;
     padding: 80px;
     text-align: center;
